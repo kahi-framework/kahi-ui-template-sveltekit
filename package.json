@@ -28,7 +28,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/fira-mono": "^4.2.2",
 		"@kahi-ui/framework": "github:novacbn/kahi-ui#0.2.12",
 		"@lukeed/uuid": "^2.0.0",
 		"cookie": "^0.4.1"
