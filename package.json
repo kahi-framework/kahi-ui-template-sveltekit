@@ -28,7 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@kahi-ui/framework": "github:novacbn/kahi-ui#0.2.12",
+		"@kahi-ui/framework": "github:novacbn/kahi-ui#0.2.16",
 		"@lukeed/uuid": "^2.0.0",
 		"cookie": "^0.4.1"
 	}
