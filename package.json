@@ -28,7 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@kahi-ui/framework": "^0.3.4",
+		"@kahi-ui/framework": "^0.5.0",
 		"@lukeed/uuid": "^2.0.0",
 		"cookie": "^0.4.1"
 	}

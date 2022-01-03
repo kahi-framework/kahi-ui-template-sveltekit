@@ -1,6 +1,6 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
-	import { Code, Container, Heading, Text } from '@kahi-ui/framework';
+	import { Anchor, Code, Container, Heading, Text } from '@kahi-ui/framework';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -23,8 +23,8 @@
 	<Heading margin_bottom="medium">About this app</Heading>
 
 	<Text>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		This is a <Anchor href="https://kit.svelte.dev" palette="accent">SvelteKit</Anchor> app. You can
+		make your own by typing the following into your command line and following the prompts:
 	</Text>
 
 	<!-- TODO lose the @next! -->
@@ -37,7 +37,7 @@
 	</Text>
 
 	<Text>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
+		The <Anchor href="/todos" palette="accent">TODOs</Anchor> page illustrates SvelteKit's data loading
+		and form handling. Try using it with JavaScript disabled!
 	</Text>
 </Container>

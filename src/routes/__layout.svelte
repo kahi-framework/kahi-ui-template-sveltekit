@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '@kahi-ui/framework/dist/kahi-ui.framework.css';
-	import { Box, Spacer, Text } from '@kahi-ui/framework';
+	import { Anchor, Box, Spacer, Text } from '@kahi-ui/framework';
 
 	import Header from '$lib/Header/index.svelte';
 </script>
@@ -15,9 +15,10 @@
 
 <Box margin_top="large" padding_x="medium" padding_y="huge">
 	<Text align="center">
-		visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
+		visit <Anchor href="https://kit.svelte.dev" palette="accent">kit.svelte.dev</Anchor> to learn SvelteKit
 		<br />
-		visit <a href="https://kahi-ui.nbn.dev">kahi-ui.nbn.dev</a> to learn Kahi UI
+		visit <Anchor href="https://kahi-ui.nbn.dev" palette="accent">kahi-ui.nbn.dev</Anchor> to learn Kahi
+		UI
 	</Text>
 </Box>
 
