@@ -11,12 +11,10 @@
 	</Omni.Header>
 
 	<Omni.Footer>
-		<Omni.Section>
-			<Menu.Container orientation="horizontal">
-				<Menu.Anchor href="/" active={$page.path === '/'}>Home</Menu.Anchor>
-				<Menu.Anchor href="/about" active={$page.path === '/about'}>About</Menu.Anchor>
-				<Menu.Anchor href="/todos" active={$page.path === '/todos'}>Todos</Menu.Anchor>
-			</Menu.Container>
-		</Omni.Section>
+		<Menu.Container orientation="horizontal">
+			<Menu.Anchor href="/" active={$page.path === '/'}>Home</Menu.Anchor>
+			<Menu.Anchor href="/about" active={$page.path === '/about'}>About</Menu.Anchor>
+			<Menu.Anchor href="/todos" active={$page.path === '/todos'}>Todos</Menu.Anchor>
+		</Menu.Container>
 	</Omni.Footer>
 </Omni.Container>
