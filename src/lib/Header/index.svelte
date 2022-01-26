@@ -12,9 +12,9 @@
 
 	<Omni.Footer>
 		<Menu.Container orientation="horizontal" hidden="mobile">
-			<Menu.Anchor href="/" active={$page.path === '/'}>Home</Menu.Anchor>
-			<Menu.Anchor href="/about" active={$page.path === '/about'}>About</Menu.Anchor>
-			<Menu.Anchor href="/todos" active={$page.path === '/todos'}>Todos</Menu.Anchor>
+			<Menu.Anchor href="/" active={$page.url.pathname === '/'}>Home</Menu.Anchor>
+			<Menu.Anchor href="/about" active={$page.url.pathname === '/about'}>About</Menu.Anchor>
+			<Menu.Anchor href="/todos" active={$page.url.pathname === '/todos'}>Todos</Menu.Anchor>
 		</Menu.Container>
 
 		<Popover.Container
@@ -27,9 +27,9 @@
 			<Popover.Section alignment_x="left" spacing="small">
 				<Box palette="auto" elevation="high" padding="medium" shape="rounded">
 					<Menu.Container>
-						<Menu.Anchor href="/" active={$page.path === '/'}>Home</Menu.Anchor>
-						<Menu.Anchor href="/about" active={$page.path === '/about'}>About</Menu.Anchor>
-						<Menu.Anchor href="/todos" active={$page.path === '/todos'}>Todos</Menu.Anchor>
+						<Menu.Anchor href="/" active={$page.url.pathname === '/'}>Home</Menu.Anchor>
+						<Menu.Anchor href="/about" active={$page.url.pathname === '/about'}>About</Menu.Anchor>
+						<Menu.Anchor href="/todos" active={$page.url.pathname === '/todos'}>Todos</Menu.Anchor>
 					</Menu.Container>
 				</Box>
 			</Popover.Section>

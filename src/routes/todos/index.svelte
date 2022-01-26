@@ -30,6 +30,7 @@
 		created_at: Date;
 		text: string;
 		done: boolean;
+		pending_delete: boolean;
 	};
 
 	export let todos: Todo[];
@@ -84,7 +85,7 @@
 					<Tile.Header>
 						<form
 							class="text"
-							action="/todos/{todo.uid}.json?_method=patch"
+							action="/todos/{todo.uid}.json?_method=PATCH"
 							method="post"
 							use:enhance={{
 								result: patch
@@ -94,7 +95,7 @@
 								name="text"
 								value={todo.text}
 								variation="flush"
-								on:blur={(event) => on_text_blur(todo.text, event)}
+								on:focusout={(event) => on_text_blur(todo.text, event)}
 							/>
 						</form>
 					</Tile.Header>
@@ -102,7 +103,7 @@
 
 				<Tile.Footer>
 					<form
-						action="/todos/{todo.uid}.json?_method=patch"
+						action="/todos/{todo.uid}.json?_method=PATCH"
 						method="post"
 						use:enhance={{
 							pending: (data) => {
@@ -119,9 +120,10 @@
 					</form>
 
 					<form
-						action="/todos/{todo.uid}.json?_method=delete"
+						action="/todos/{todo.uid}.json?_method=DELETE"
 						method="post"
 						use:enhance={{
+							pending: () => (todo.pending_delete = true),
 							result: () => {
 								todos = todos.filter((t) => t.uid !== todo.uid);
 							}
