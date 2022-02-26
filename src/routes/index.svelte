@@ -1,37 +1,16 @@
-<script context="module" lang="ts">
-	export const prerender = true;
+<script>
+  import { Anchor, Heading, Text } from "@kahi-ui/framework";
 </script>
 
-<script lang="ts">
-	import { Container, Heading, Spacer, Stack } from '@kahi-ui/framework';
+<Heading>Welcome to SvelteKit + Kahi UI</Heading>
 
-	import Counter from '$lib/Counter/index.svelte';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
-<Stack alignment_x="center">
-	<img src="svelte-welcome.png" alt="Welcome" />
-</Stack>
-
-<Container>
-	<Stack alignment_x="center">
-		<Heading>
-			to your new
-			<br />
-			SvelteKit app
-		</Heading>
-
-		<Spacer spacing="huge" />
-
-		<Heading is="h2">
-			try editing <strong>src/routes/index.svelte</strong>
-		</Heading>
-
-		<Spacer spacing="medium" />
-
-		<Counter />
-	</Stack>
-</Container>
+<Text>
+  Visit <Anchor href="https://kit.svelte.dev" palette="informative">
+    kit.svelte.dev
+  </Anchor> to read the SvelteKit documentation, or, <Anchor
+    href="https://kahi-ui.nbn.dev"
+    palette="informative"
+  >
+    kahi-ui.nbn.dev
+  </Anchor> to read the Kahi UI documentation.
+</Text>
